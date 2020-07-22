@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import keras
 from termcolor import colored
-from keras.datasets import boston_housing
+from keras.datasets import cifar10
 
 def show_shapes(x_train, y_train, x_test, y_test, color='green'):
     print(colored('Training shape:', color, attrs=['bold']))
@@ -27,13 +27,23 @@ def show_sample_image(x_train, y_train, idx=0, color='blue', cmap=None):
     print()
     plot_data(x_train[idx], cmap=cmap)
 
-(x_train, y_train), (x_test, y_test) = boston_housing.load_data()
+from keras.datasets import cifar10
+(x_train, y_train), (x_test, y_test) = cifar10.load_data()
+
 show_shapes(x_train, y_train, x_test, y_test)
 print('\n******************************\n')
-show_sample(x_train, y_train)
+show_sample_image(x_train, y_train)
 
 """
-This dataset contains 13 attributes of houses at different locations around the Boston suburbs in the late 1970s.
-Targets are the median values of the houses at a location (in k$).
-Note: load_data() returns two tuples of Numpy arrays. The first tuple represents the training x-y pairs while the second tuple represents the testing x-y pairs.
+Dataset of 50,000 32x32 color training images, labeled over 100 categories, and 10,000 test images.
+
+Returns 2 types data:
+
+x_train and x_test
+uint8 array of RGB image data with shape (num_samples, 32, 32, 3).
+uint8 is an unsigned integer (0 to 255).
+The "3" here refers to the 3 RGB channels.
+y_train and y_test
+uint8 array of category labels (integers in range 0-99) with shape (num_samples, 1).
+
 """
