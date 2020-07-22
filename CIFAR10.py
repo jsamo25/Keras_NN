@@ -27,7 +27,6 @@ def show_sample_image(x_train, y_train, idx=0, color='blue', cmap=None):
     print()
     plot_data(x_train[idx], cmap=cmap)
 
-from keras.datasets import cifar10
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
 show_shapes(x_train, y_train, x_test, y_test)

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import keras
 from termcolor import colored
-from keras.datasets import cifar10
+from keras.datasets import reuters
 
 def show_shapes(x_train, y_train, x_test, y_test, color='green'):
     print(colored('Training shape:', color, attrs=['bold']))
@@ -27,7 +27,6 @@ def show_sample_image(x_train, y_train, idx=0, color='blue', cmap=None):
     print()
     plot_data(x_train[idx], cmap=cmap)
 
-from keras.datasets import reuters
 (x_train, y_train), (x_test, y_test) = reuters.load_data()
 
 show_shapes(x_train, y_train, x_test, y_test)

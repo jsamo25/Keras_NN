@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import keras
 from termcolor import colored
-from keras.datasets import cifar10
+from keras.datasets import cifar100
 
 def show_shapes(x_train, y_train, x_test, y_test, color='green'):
     print(colored('Training shape:', color, attrs=['bold']))
@@ -27,7 +27,6 @@ def show_sample_image(x_train, y_train, idx=0, color='blue', cmap=None):
     print()
     plot_data(x_train[idx], cmap=cmap)
 
-from keras.datasets import cifar100
 (x_train, y_train), (x_test, y_test) = cifar100.load_data(label_mode='fine')
 
 show_shapes(x_train, y_train, x_test, y_test)
