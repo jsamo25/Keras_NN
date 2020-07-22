@@ -27,4 +27,7 @@ def show_sample_image(x_train, y_train, idx=0, color='blue', cmap=None):
     print()
     plot_data(x_train[idx], cmap=cmap)
 
-
+(x_train, y_train), (x_test, y_test) = boston_housing.load_data()
+show_shapes(x_train, y_train, x_test, y_test)
+print('\n******************************\n')
+show_sample(x_train, y_train)
