@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import keras
 from termcolor import colored
 from keras.datasets import cifar10
 
