@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
 from keras.datasets import boston_housing
 from keras import models
