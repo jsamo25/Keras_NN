@@ -50,8 +50,8 @@ Label	Description
 Returns 2 types data:
 
 x_train and x_test
-uint8 array of grayscale image data with shape (num_samples, 28, 28).
-uint8 is an unsigned integer (0 to 255).
+    uint8 array of grayscale image data with shape (num_samples, 28, 28).
+    uint8 is an unsigned integer (0 to 255).
 y_train and y_test
-uint8 array of category labels (integers in range 0-9) with shape (num_samples,).
+    uint8 array of category labels (integers in range 0-9) with shape (num_samples,).
 """

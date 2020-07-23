@@ -39,7 +39,7 @@ As with the IMDB dataset, each wire is encoded as a sequence of word indexes (sa
 Returns 2 types data:
 
 x_train and x_test
-list of sequences, which are lists of indexes (integers).
+    list of sequences, which are lists of indexes (integers).
 y_train and y_test
-list of integer labels (0 to 45).
+    list of integer labels (0 to 45).
 """

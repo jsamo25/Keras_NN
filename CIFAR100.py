@@ -38,9 +38,9 @@ Dataset of 50,000 32x32 color training images, labeled over 100 categories, and 
 Returns 2 types data:
 
 x_train and x_test
-uint8 array of RGB image data with shape (num_samples, 32, 32, 3).
-uint8 is an unsigned integer (0 to 255).
-The "3" here refers to the 3 RGB channels.
+    uint8 array of RGB image data with shape (num_samples, 32, 32, 3).
+    uint8 is an unsigned integer (0 to 255).
+    The "3" here refers to the 3 RGB channels.
 y_train and y_test
-uint8 array of category labels (integers in range 0-99) with shape (num_samples, 1)
+    uint8 array of category labels (integers in range 0-99) with shape (num_samples, 1)
 """

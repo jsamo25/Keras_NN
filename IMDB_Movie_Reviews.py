@@ -43,7 +43,7 @@ As a convention, "0" does not stand for a specific word, but instead is used to 
 Returns 2 types data:
 
 x_train and x_test
-list of sequences, which are lists of indexes (integers).
+    list of sequences, which are lists of indexes (integers).
 y_train and y_test
-list of integer labels (1 or 0).
+    list of integer labels (1 or 0).
 """
